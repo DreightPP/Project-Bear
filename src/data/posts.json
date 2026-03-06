@@ -1,0 +1,35 @@
+[
+  {
+    "id": "scialpinismo-lago-palu",
+    "slug": "lago-palu",
+    "category": "scialpinismo",
+    "title": "Lago Palù e Monte Motta",
+    "date": "2026-03-06T08:00:00Z",
+    "excerpt": "Giretto easy in Valmalenco con discesa sulle piste",
+    "gpx": "/assets/gpx/lago-palu.gpx",
+    "photos": [],
+    "path": "/content/scialpinismo/lago-palu.md"
+  },
+  {
+    "id": "escursioni-monte-bianco",
+    "slug": "monte-bianco",
+    "category": "escursioni",
+    "title": "Traversata del Monte Bianco",
+    "date": "2026-03-05T08:00:00Z",
+    "excerpt": "Una splendida giornata sul tetto d'Europa. Vista mozzafiato e neve perfetta.",
+    "gpx": "/assets/gpx/monte-bianco.gpx",
+    "photos": [],
+    "path": "/content/escursioni/monte-bianco.md"
+  },
+  {
+    "id": "mtb-colli-euganei",
+    "slug": "colli-euganei",
+    "category": "mtb",
+    "title": "Giro in MTB sui Colli Euganei",
+    "date": "2026-02-28T14:30:00Z",
+    "excerpt": "Un pomeriggio adrenalinico tra i single track più belli dei Colli.",
+    "gpx": "/assets/gpx/colli-euganei.gpx",
+    "photos": [],
+    "path": "/content/mtb/colli-euganei.md"
+  }
+]
