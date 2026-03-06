@@ -1,0 +1,56 @@
+.gpx-stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  flex-shrink: 0;
+}
+
+.stat-icon.distance-icon {
+  color: var(--accent-primary);
+}
+
+.stat-icon.gain-icon {
+  color: var(--accent-escursioni);
+}
+
+.stat-icon.loss-icon {
+  color: var(--accent-arrampicata);
+}
+
+.stat-icon.peak-icon {
+  color: var(--accent-scialpinismo);
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}

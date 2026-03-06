@@ -4,6 +4,8 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import postsData from '../data/posts.json';
 import GpxMap from '../components/GpxMap';
+import GpxStatsBar from '../components/GpxStatsBar';
+import ElevationProfile from '../components/ElevationProfile';
 import './Pages.css';
 
 export default function Post() {
@@ -57,6 +59,8 @@ export default function Post() {
         <h1 className="post-main-title">{post.title}</h1>
       </header>
 
+      {post.gpxStats && <GpxStatsBar stats={post.gpxStats} />}
+
       <article className="markdown-content glass-panel" style={{ padding: '2.5rem' }}>
         {loading ? (
           <div className="loading-state">Caricamento report...</div>
@@ -68,6 +72,10 @@ export default function Post() {
       </article>
 
       {post.gpx && <GpxMap gpxUrl={post.gpx} />}
+
+      {post.gpxStats && post.gpxStats.elevationProfile && (
+        <ElevationProfile elevationData={post.gpxStats.elevationProfile} />
+      )}
     </div>
   );
 }

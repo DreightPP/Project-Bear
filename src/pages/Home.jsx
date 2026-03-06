@@ -1,5 +1,6 @@
 import postsData from '../data/posts.json';
 import PostCard from '../components/PostCard';
+import GlobalMap from '../components/GlobalMap';
 import './Pages.css';
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
         <h1>Tutte le Uscite</h1>
         <p className="page-subtitle">I log delle mie avventure in montagna e all'aperto.</p>
       </header>
+
+      <GlobalMap posts={postsData} />
       
       {postsData.length === 0 ? (
         <div className="empty-state glass-panel">
